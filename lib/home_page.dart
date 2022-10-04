@@ -145,7 +145,8 @@ class _HomeState extends State<Home> {
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.account_balance_wallet,
+                                color: Color.fromARGB(255, 33, 54, 243)),
                           ),
                         ),
                       ],
@@ -160,7 +161,8 @@ class _HomeState extends State<Home> {
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.account_balance_wallet,
+                                color: Color.fromARGB(255, 33, 54, 243)),
                           ),
                         ),
                         const SizedBox(
@@ -174,7 +176,8 @@ class _HomeState extends State<Home> {
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.account_balance_wallet,
+                                color: Color.fromARGB(255, 33, 54, 243)),
                           ),
                         ),
                       ],
@@ -189,7 +192,8 @@ class _HomeState extends State<Home> {
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.account_balance_wallet,
+                                color: Color.fromARGB(255, 33, 54, 243)),
                           ),
                         ),
                         const SizedBox(
@@ -203,7 +207,8 @@ class _HomeState extends State<Home> {
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.account_balance_wallet,
+                                color: Color.fromARGB(255, 33, 54, 243)),
                           ),
                         ),
                       ],
