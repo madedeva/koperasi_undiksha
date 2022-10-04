@@ -20,155 +20,161 @@ class _LoginState extends State<Login> {
         backgroundColor: const Color.fromARGB(255, 33, 54, 243), //appbar color
         title: const Text('Koperasi Undiksha'),
       ),
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Column(
-              children: [
-                const SizedBox(
-                  height: 25,
-                ),
-                Image.asset(
-                  'images/campus.png',
-                  width: 120,
-                  height: 120,
-                ),
-                Container(
-                  height: 320.0,
-                  width: 350.0,
-                  margin: const EdgeInsets.only(top: 30),
-                  decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                    border: Border(
-                      top: BorderSide(
-                          width: 1.0, color: Color.fromARGB(255, 29, 59, 255)),
-                      left: BorderSide(
-                          width: 1.0, color: Color.fromARGB(255, 29, 59, 255)),
-                      right: BorderSide(
-                          width: 1.0, color: Color.fromARGB(255, 29, 59, 255)),
-                      bottom: BorderSide(
-                          width: 1.0, color: Color.fromARGB(255, 29, 59, 255)),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: Image.asset(
+                      'images/campus.png',
+                      width: 120,
+                      height: 120,
                     ),
-                    color: Color(0xFFffffff),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        blurRadius: 15.0,
-                        spreadRadius: 2.0,
-                        offset: Offset(
-                          5.0,
-                          5.0,
-                        ),
-                      )
-                    ],
                   ),
-                  child: Center(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: <Widget>[
-                        Container(
-                          //form login
-                          margin: const EdgeInsets.only(
-                              left: 30, right: 30, top: 30),
-                          child: Column(
-                            children: <Widget>[
-                              const Text('Username'),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              const TextField(
-                                decoration: InputDecoration(
-                                  border: OutlineInputBorder(),
-                                  // labelText: 'Username',
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              const Text('Password'),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              const TextField(
-                                obscureText: true,
-                                decoration: InputDecoration(
-                                  border: OutlineInputBorder(),
-                                  // labelText: 'Password',
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              Container(
-                                height: 40,
-                                width: 200,
-                                decoration: BoxDecoration(
-                                    boxShadow: const [
-                                      BoxShadow(
-                                        color: Colors.grey,
-                                        blurRadius: 15.0,
-                                        spreadRadius: 2.0,
-                                        offset: Offset(
-                                          5.0,
-                                          5.0,
-                                        ),
-                                      )
-                                    ],
-                                    color:
-                                        const Color.fromARGB(255, 33, 54, 243),
-                                    borderRadius: BorderRadius.circular(20)),
-                                child: FlatButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => const Home()),
-                                    );
-                                  },
-                                  child: const Text(
-                                    'Login',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 18),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),
-                              Container(
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: const [
-                                    Text(
-                                      'Buat Mbanking',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color:
-                                              Color.fromARGB(255, 33, 54, 243)),
-                                    ),
-                                    Text(
-                                      'Lupa Password?',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color:
-                                              Color.fromARGB(255, 33, 54, 243)),
-                                    ),
-                                  ],
-                                ),
-                              )
-                            ],
+                  Container(
+                    height: 320.0,
+                    width: 350.0,
+                    margin: const EdgeInsets.only(top: 30),
+                    decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      border: Border(
+                        top: BorderSide(
+                            width: 1.0,
+                            color: Color.fromARGB(255, 29, 59, 255)),
+                        left: BorderSide(
+                            width: 1.0,
+                            color: Color.fromARGB(255, 29, 59, 255)),
+                        right: BorderSide(
+                            width: 1.0,
+                            color: Color.fromARGB(255, 29, 59, 255)),
+                        bottom: BorderSide(
+                            width: 1.0,
+                            color: Color.fromARGB(255, 29, 59, 255)),
+                      ),
+                      color: Color(0xFFffffff),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 15.0,
+                          spreadRadius: 2.0,
+                          offset: Offset(
+                            5.0,
+                            5.0,
                           ),
-                        ),
+                        )
                       ],
                     ),
+                    child: Center(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          Container(
+                            //form login
+                            margin: const EdgeInsets.only(
+                                left: 30, right: 30, top: 30),
+                            child: Column(
+                              children: <Widget>[
+                                const Text('Username'),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                const TextField(
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(),
+                                    // labelText: 'Username',
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                const Text('Password'),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                const TextField(
+                                  obscureText: true,
+                                  decoration: InputDecoration(
+                                    border: OutlineInputBorder(),
+                                    // labelText: 'Password',
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Container(
+                                  height: 40,
+                                  width: 200,
+                                  decoration: BoxDecoration(
+                                      boxShadow: const [
+                                        BoxShadow(
+                                          color: Colors.grey,
+                                          blurRadius: 15.0,
+                                          spreadRadius: 2.0,
+                                          offset: Offset(
+                                            5.0,
+                                            5.0,
+                                          ),
+                                        )
+                                      ],
+                                      color: const Color.fromARGB(
+                                          255, 33, 54, 243),
+                                      borderRadius: BorderRadius.circular(20)),
+                                  child: FlatButton(
+                                    onPressed: () {
+                                      Navigator.pushReplacement<void, void>(
+                                        context,
+                                        MaterialPageRoute<void>(
+                                            builder: (context) => const Home()),
+                                      );
+                                    },
+                                    child: const Text(
+                                      'Login',
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 18),
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                Container(
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: const [
+                                      Text(
+                                        'Buat Mbanking',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Color.fromARGB(
+                                                255, 33, 54, 243)),
+                                      ),
+                                      Text(
+                                        'Lupa Password?',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Color.fromARGB(
+                                                255, 33, 54, 243)),
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
-                ),
-              ],
-            )
-          ],
+                ],
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
