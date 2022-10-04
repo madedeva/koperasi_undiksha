@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:praktikum_satu/home_page.dart';
+import 'package:praktikum_satu/main_page.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -28,15 +29,15 @@ class _LoginState extends State<Login> {
               Column(
                 children: [
                   Container(
-                    padding: const EdgeInsets.only(top: 20.0),
+                    padding: const EdgeInsets.only(top: 50.0),
                     child: Image.asset(
                       'images/campus.png',
-                      width: 120,
-                      height: 120,
+                      width: 200,
+                      height: 200,
                     ),
                   ),
                   Container(
-                    height: 320.0,
+                    height: 350.0,
                     width: 350.0,
                     margin: const EdgeInsets.only(top: 30),
                     decoration: const BoxDecoration(
@@ -72,14 +73,19 @@ class _LoginState extends State<Login> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: <Widget>[
+                        children: [
                           Container(
                             //form login
                             margin: const EdgeInsets.only(
                                 left: 30, right: 30, top: 30),
                             child: Column(
-                              children: <Widget>[
-                                const Text('Username'),
+                              children: [
+                                const Text(
+                                  'Username',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 const SizedBox(
                                   height: 10,
                                 ),
@@ -92,7 +98,12 @@ class _LoginState extends State<Login> {
                                 const SizedBox(
                                   height: 20,
                                 ),
-                                const Text('Password'),
+                                const Text(
+                                  'Password',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                                 const SizedBox(
                                   height: 10,
                                 ),
@@ -104,20 +115,20 @@ class _LoginState extends State<Login> {
                                   ),
                                 ),
                                 const SizedBox(
-                                  height: 10,
+                                  height: 25,
                                 ),
                                 Container(
                                   height: 40,
-                                  width: 200,
+                                  width: 100,
                                   decoration: BoxDecoration(
                                       boxShadow: const [
                                         BoxShadow(
                                           color: Colors.grey,
-                                          blurRadius: 15.0,
+                                          blurRadius: 10.0,
                                           spreadRadius: 2.0,
                                           offset: Offset(
-                                            5.0,
-                                            5.0,
+                                            2.0,
+                                            2.0,
                                           ),
                                         )
                                       ],

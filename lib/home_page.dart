@@ -62,8 +62,8 @@ class _HomeState extends State<Home> {
                       ),
                       child: const Image(
                         image: AssetImage('images/pp.jpeg'),
-                        width: 120,
-                        height: 120,
+                        width: 150,
+                        height: 150,
                       ),
                     ),
                     Container(
@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                                     const Color.fromARGB(255, 206, 191, 238)),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
+                              children: const [
                                 Text('Nasabah',
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold)),
@@ -107,7 +107,7 @@ class _HomeState extends State<Home> {
                                   child: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text('Total Saldo Anda',
                                           style: TextStyle(
                                               fontWeight: FontWeight.bold)),
