@@ -44,8 +44,8 @@ class _HomeState extends State<Home> {
                       ),
                       child: const Image(
                         image: AssetImage('images/pp.jpeg'),
-                        width: 100,
-                        height: 100,
+                        width: 120,
+                        height: 120,
                       ),
                     ),
                     Container(
@@ -120,113 +120,216 @@ class _HomeState extends State<Home> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: 60,
-                            height: 60,
-                            padding: EdgeInsets.all(20.0),
+                    Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
                             color: Colors.grey[200],
-                            child: const Icon(
-                              Icons.account_balance_wallet,
-                              color: Color.fromARGB(255, 33, 54, 243),
-                            ),
+                            borderRadius: BorderRadius.circular(10.0),
                           ),
-                          SizedBox(
-                            height: 10.0,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: const Icon(Icons.account_balance_wallet,
+                                color: Color.fromARGB(255, 33, 54, 243)),
                           ),
-                          Container(
-                            width: 60,
-                            height: 60,
-                            padding: EdgeInsets.all(20.0),
+                        ),
+                        const SizedBox(
+                          height: 10.0,
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
                             color: Colors.grey[200],
-                            child: const Icon(
-                              Icons.wallet_travel,
-                              color: Color.fromARGB(255, 33, 54, 243),
-                            ),
-                          )
-                        ],
-                      ),
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.add),
+                          ),
+                        ),
+                      ],
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: 60,
-                            height: 60,
-                            padding: EdgeInsets.all(20.0),
+                    Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
                             color: Colors.grey[200],
-                            child: const Icon(
-                              Icons.money,
-                              color: Color.fromARGB(255, 33, 54, 243),
-                            ),
+                            borderRadius: BorderRadius.circular(10.0),
                           ),
-                          SizedBox(
-                            height: 10.0,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.add),
                           ),
-                          Container(
-                            width: 60,
-                            height: 60,
-                            padding: EdgeInsets.all(20.0),
+                        ),
+                        const SizedBox(
+                          height: 10.0,
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
                             color: Colors.grey[200],
-                            child: const Icon(
-                              Icons.attach_money,
-                              color: Color.fromARGB(255, 33, 54, 243),
-                            ),
-                          )
-                        ],
-                      ),
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.add),
+                          ),
+                        ),
+                      ],
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: 60,
-                            height: 60,
-                            padding: EdgeInsets.all(20.0),
+                    Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
                             color: Colors.grey[200],
-                            child: const Icon(
-                              Icons.monetization_on,
-                              color: Color.fromARGB(255, 33, 54, 243),
-                            ),
+                            borderRadius: BorderRadius.circular(10.0),
                           ),
-                          SizedBox(
-                            height: 10.0,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.add),
                           ),
-                          Container(
-                            width: 60,
-                            height: 60,
-                            padding: EdgeInsets.all(20.0),
+                        ),
+                        const SizedBox(
+                          height: 10.0,
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(10.0),
+                          decoration: BoxDecoration(
                             color: Colors.grey[200],
-                            child: const Icon(
-                              Icons.leaderboard,
-                              color: Color.fromARGB(255, 33, 54, 243),
-                            ),
-                          )
-                        ],
-                      ),
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.add),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
               ),
+              // Container(
+              //   padding: const EdgeInsets.all(10.0),
+              //   decoration: BoxDecoration(
+              //     color: Colors.white,
+              //     borderRadius: BorderRadius.circular(10.0),
+              //     border: Border.all(
+              //       color: const Color.fromARGB(255, 10, 7, 139),
+              //     ),
+              //   ),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //     children: [
+              //       Container(
+              //         decoration: BoxDecoration(
+              //           borderRadius: BorderRadius.circular(10.0),
+              //         ),
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.start,
+              //           children: [
+              //             Container(
+              //               width: 60,
+              //               height: 60,
+              //               padding: const EdgeInsets.all(20.0),
+              //               color: Colors.grey[200],
+              //               child: const Icon(
+              //                 Icons.account_balance_wallet,
+              //                 color: Color.fromARGB(255, 33, 54, 243),
+              //               ),
+              //             ),
+              //             const SizedBox(
+              //               height: 20.0,
+              //             ),
+              //             Container(
+              //               width: 60,
+              //               height: 60,
+              //               padding: const EdgeInsets.all(20.0),
+              //               color: Colors.grey[200],
+              //               child: const Icon(
+              //                 Icons.wallet_travel,
+              //                 color: Color.fromARGB(255, 33, 54, 243),
+              //               ),
+              //             )
+              //           ],
+              //         ),
+              //       ),
+              //       Container(
+              //         decoration: BoxDecoration(
+              //           borderRadius: BorderRadius.circular(10.0),
+              //         ),
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.start,
+              //           children: [
+              //             Container(
+              //               width: 60,
+              //               height: 60,
+              //               padding: const EdgeInsets.all(20.0),
+              //               color: Colors.grey[200],
+              //               child: const Icon(
+              //                 Icons.money,
+              //                 color: Color.fromARGB(255, 33, 54, 243),
+              //               ),
+              //             ),
+              //             const SizedBox(
+              //               height: 20.0,
+              //             ),
+              //             Container(
+              //               width: 60,
+              //               height: 60,
+              //               padding: const EdgeInsets.all(20.0),
+              //               color: Colors.grey[200],
+              //               child: const Icon(
+              //                 Icons.attach_money,
+              //                 color: Color.fromARGB(255, 33, 54, 243),
+              //               ),
+              //             )
+              //           ],
+              //         ),
+              //       ),
+              //       Container(
+              //         decoration: BoxDecoration(
+              //           borderRadius: BorderRadius.circular(10.0),
+              //         ),
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.start,
+              //           children: [
+              //             Container(
+              //               width: 60,
+              //               height: 60,
+              //               padding: const EdgeInsets.all(20.0),
+              //               color: Colors.grey[200],
+              //               child: const Icon(
+              //                 Icons.monetization_on,
+              //                 color: Color.fromARGB(255, 33, 54, 243),
+              //               ),
+              //             ),
+              //             const SizedBox(
+              //               height: 20.0,
+              //             ),
+              //             Container(
+              //               width: 60,
+              //               height: 60,
+              //               padding: EdgeInsets.all(20.0),
+              //               color: Colors.grey[200],
+              //               child: const Icon(
+              //                 Icons.leaderboard,
+              //                 color: Color.fromARGB(255, 33, 54, 243),
+              //               ),
+              //             )
+              //           ],
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
               const SizedBox(
                 height: 10.0,
               ),
               Container(
-                padding: EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                   borderRadius: BorderRadius.circular(10.0),
@@ -275,7 +378,7 @@ class _HomeState extends State<Home> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_balance_wallet),
-            label: 'Wallet',
+            label: 'Dompet',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
