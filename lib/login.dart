@@ -81,11 +81,11 @@ class LoginPage extends StatelessWidget {
                                           color: Colors.white, fontSize: 20.0),
                                     ),
                                     onPressed: () {
-                                      Navigator.push(
+                                      Navigator.pushReplacement(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const HomePage()));
+                                                  HomePage()));
                                     },
                                   ),
                                 ),
@@ -214,7 +214,7 @@ class LoginPage extends StatelessWidget {
                                                 context,
                                                 MaterialPageRoute(
                                                     builder: (context) =>
-                                                        const HomePage()),
+                                                        HomePage()),
                                               );
                                             },
                                             child: const Text(
