@@ -3,9 +3,14 @@ import 'package:flutter/material.dart';
 
 import 'home.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     bool isIOS = Theme.of(context).platform == TargetPlatform.iOS;

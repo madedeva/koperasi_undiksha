@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'grid_view_widget.dart';
 import 'login.dart';
 
 // class GridLayout {
@@ -18,12 +19,15 @@ import 'login.dart';
 //   GridLayout(title: 'Wallet', icon: Icons.account_balance_wallet),
 // ];
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
-  // GridLayout layout;
-  // GridOptions({this.layout});
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
 
+class _HomePageState extends State<HomePage> {
+  // GridLayout layout;
   @override
   Widget build(BuildContext context) {
     bool isIOS = Theme.of(context).platform == TargetPlatform.iOS;
@@ -169,10 +173,7 @@ class HomePage extends StatelessWidget {
                           color: const Color.fromARGB(255, 10, 7, 139),
                         ),
                       ),
-                      child: const Text(
-                        'grid tidak mau berfungsi',
-                        style: TextStyle(color: Colors.red),
-                      ),
+                      child: const GridViewWidget(),
                     ),
                     const SizedBox(
                       height: 10.0,
