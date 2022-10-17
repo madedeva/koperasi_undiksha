@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/login_page.dart';
+
+import 'login.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
                   Navigator.pushReplacement<void, void>(
                     context,
                     MaterialPageRoute<void>(
-                        builder: (context) => const Login()),
+                        builder: (context) => const LoginPage()),
                   );
                 },
                 child: const Icon(
@@ -136,134 +136,133 @@ class _HomeState extends State<Home> {
                     color: const Color.fromARGB(255, 10, 7, 139),
                   ),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: TextButton.icon(
-                              onPressed: () {},
-                              icon: const Icon(Icons.account_balance_wallet,
-                                  color: Color.fromARGB(255, 33, 54, 243)),
-                              label: const Text(
-                                'Wallet',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              )),
-                        ),
-                        const SizedBox(
-                          height: 10.0,
-                        ),
-                        Container(
-                          padding: EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: TextButton.icon(
-                              onPressed: () {},
-                              icon: const Icon(Icons.account_balance_wallet,
-                                  color: Color.fromARGB(255, 33, 54, 243)),
-                              label: const Text(
-                                'Wallet',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              )),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: TextButton.icon(
-                              onPressed: () {},
-                              icon: const Icon(Icons.account_balance_wallet,
-                                  color: Color.fromARGB(255, 33, 54, 243)),
-                              label: const Text(
-                                'Wallet',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              )),
-                        ),
-                        const SizedBox(
-                          height: 10.0,
-                        ),
-                        Container(
-                          padding: EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: TextButton.icon(
-                              onPressed: () {},
-                              icon: const Icon(Icons.account_balance_wallet,
-                                  color: Color.fromARGB(255, 33, 54, 243)),
-                              label: const Text(
-                                'Wallet',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              )),
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: TextButton.icon(
-                              onPressed: () {},
-                              icon: const Icon(Icons.account_balance_wallet,
-                                  color: Color.fromARGB(255, 33, 54, 243)),
-                              label: const Text(
-                                'Wallet',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              )),
-                        ),
-                        const SizedBox(
-                          height: 10.0,
-                        ),
-                        Container(
-                          padding: const EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                            color: Colors.grey[200],
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: TextButton.icon(
-                              onPressed: () {},
-                              icon: const Icon(Icons.account_balance_wallet,
-                                  color: Color.fromARGB(255, 33, 54, 243)),
-                              label: const Text(
-                                'Wallet',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                ),
-                              )),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+                child: Column(children: [Text('data')]),
+                // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                // children: [
+                //   Column(
+                //     children: [
+                //       Container(
+                //         padding: EdgeInsets.all(10.0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.grey[200],
+                //           borderRadius: BorderRadius.circular(10.0),
+                //         ),
+                //         child: TextButton.icon(
+                //             onPressed: () {},
+                //             icon: const Icon(Icons.account_balance_wallet,
+                //                 color: Color.fromARGB(255, 33, 54, 243)),
+                //             label: const Text(
+                //               'Wallet',
+                //               style: TextStyle(
+                //                 color: Colors.black,
+                //               ),
+                //             )),
+                //       ),
+                //       const SizedBox(
+                //         height: 10.0,
+                //       ),
+                //       Container(
+                //         padding: EdgeInsets.all(10.0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.grey[200],
+                //           borderRadius: BorderRadius.circular(10.0),
+                //         ),
+                //         child: TextButton.icon(
+                //             onPressed: () {},
+                //             icon: const Icon(Icons.account_balance_wallet,
+                //                 color: Color.fromARGB(255, 33, 54, 243)),
+                //             label: const Text(
+                //               'Wallet',
+                //               style: TextStyle(
+                //                 color: Colors.black,
+                //               ),
+                //             )),
+                //       ),
+                //     ],
+                //   ),
+                //   Column(
+                //     children: [
+                //       Container(
+                //         padding: EdgeInsets.all(10.0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.grey[200],
+                //           borderRadius: BorderRadius.circular(10.0),
+                //         ),
+                //         child: TextButton.icon(
+                //             onPressed: () {},
+                //             icon: const Icon(Icons.account_balance_wallet,
+                //                 color: Color.fromARGB(255, 33, 54, 243)),
+                //             label: const Text(
+                //               'Wallet',
+                //               style: TextStyle(
+                //                 color: Colors.black,
+                //               ),
+                //             )),
+                //       ),
+                //       const SizedBox(
+                //         height: 10.0,
+                //       ),
+                //       Container(
+                //         padding: EdgeInsets.all(10.0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.grey[200],
+                //           borderRadius: BorderRadius.circular(10.0),
+                //         ),
+                //         child: TextButton.icon(
+                //             onPressed: () {},
+                //             icon: const Icon(Icons.account_balance_wallet,
+                //                 color: Color.fromARGB(255, 33, 54, 243)),
+                //             label: const Text(
+                //               'Wallet',
+                //               style: TextStyle(
+                //                 color: Colors.black,
+                //               ),
+                //             )),
+                //       ),
+                //     ],
+                //   ),
+                //   Column(
+                //     children: [
+                //       Container(
+                //         padding: EdgeInsets.all(10.0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.grey[200],
+                //           borderRadius: BorderRadius.circular(10.0),
+                //         ),
+                //         child: TextButton.icon(
+                //             onPressed: () {},
+                //             icon: const Icon(Icons.account_balance_wallet,
+                //                 color: Color.fromARGB(255, 33, 54, 243)),
+                //             label: const Text(
+                //               'Wallet',
+                //               style: TextStyle(
+                //                 color: Colors.black,
+                //               ),
+                //             )),
+                //       ),
+                //       const SizedBox(
+                //         height: 10.0,
+                //       ),
+                //       Container(
+                //         padding: const EdgeInsets.all(10.0),
+                //         decoration: BoxDecoration(
+                //           color: Colors.grey[200],
+                //           borderRadius: BorderRadius.circular(10.0),
+                //         ),
+                //         child: TextButton.icon(
+                //             onPressed: () {},
+                //             icon: const Icon(Icons.account_balance_wallet,
+                //                 color: Color.fromARGB(255, 33, 54, 243)),
+                //             label: const Text(
+                //               'Wallet',
+                //               style: TextStyle(
+                //                 color: Colors.black,
+                //               ),
+                //             )),
+                //       ),
+                //     ],
+                //   ),
+                // ],
               ),
               const SizedBox(
                 height: 10.0,
@@ -296,7 +295,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       Container(
-                        child: Icon(
+                        child: const Icon(
                           Icons.call,
                           color: Color.fromARGB(255, 33, 54, 243),
                           size: 50,
@@ -317,8 +316,11 @@ class _HomeState extends State<Home> {
             label: 'Setting',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.grid_view_outlined),
-            label: 'Menu',
+            icon: Icon(
+              Icons.qr_code,
+              size: 50,
+            ),
+            label: 'QRIS',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
