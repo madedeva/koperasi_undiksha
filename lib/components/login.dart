@@ -277,7 +277,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const <Widget>[
               Text(
-                'copyright @2022 by Undiksha',
+                'copyright @2022 By Undiksha',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.black,
