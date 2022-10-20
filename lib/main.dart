@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:praktikum_satu/components/login.dart';
 import 'package:praktikum_satu/components/login_test_adaptive.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,6 +29,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.poppinsTextTheme(
+          Theme.of(context).textTheme,
+        ),
+        primaryTextTheme: GoogleFonts.poppinsTextTheme().copyWith(
+          headline6: const TextStyle(
+            color: Colors.white,
+          ),
+        ),
       ),
       home: const LoginPage(),
     );

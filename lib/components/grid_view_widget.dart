@@ -47,6 +47,7 @@ class _GridViewWidgetState extends State<GridViewWidget> {
                   style: TextStyle(
                     color: Color.fromARGB(255, 65, 33, 243),
                     fontWeight: FontWeight.bold,
+                    fontSize: 12,
                   ),
                 ),
               ),
@@ -79,6 +80,7 @@ class _GridViewWidgetState extends State<GridViewWidget> {
                   style: TextStyle(
                     color: Color.fromARGB(255, 65, 33, 243),
                     fontWeight: FontWeight.bold,
+                    fontSize: 12,
                   ),
                 ),
               ),
@@ -111,6 +113,7 @@ class _GridViewWidgetState extends State<GridViewWidget> {
                   style: TextStyle(
                     color: Color.fromARGB(255, 65, 33, 243),
                     fontWeight: FontWeight.bold,
+                    fontSize: 12,
                   ),
                 ),
               ),
@@ -143,6 +146,7 @@ class _GridViewWidgetState extends State<GridViewWidget> {
                   style: TextStyle(
                     color: Color.fromARGB(255, 65, 33, 243),
                     fontWeight: FontWeight.bold,
+                    fontSize: 12,
                   ),
                 ),
               ),
@@ -175,6 +179,7 @@ class _GridViewWidgetState extends State<GridViewWidget> {
                   style: TextStyle(
                     color: Color.fromARGB(255, 65, 33, 243),
                     fontWeight: FontWeight.bold,
+                    fontSize: 12,
                   ),
                 ),
               ),
@@ -207,6 +212,7 @@ class _GridViewWidgetState extends State<GridViewWidget> {
                   style: TextStyle(
                     color: Color.fromARGB(255, 65, 33, 243),
                     fontWeight: FontWeight.bold,
+                    fontSize: 12,
                   ),
                 ),
               ),
