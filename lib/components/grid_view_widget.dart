@@ -22,7 +22,11 @@ class _GridViewWidgetState extends State<GridViewWidget> {
       children: <Widget>[
         Container(
           padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
+          // color: Colors.teal[100],
+          decoration: BoxDecoration(
+            color: Colors.teal[100],
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -51,7 +55,10 @@ class _GridViewWidgetState extends State<GridViewWidget> {
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
+          decoration: BoxDecoration(
+            color: Colors.teal[100],
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -80,7 +87,10 @@ class _GridViewWidgetState extends State<GridViewWidget> {
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
+          decoration: BoxDecoration(
+            color: Colors.teal[100],
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -109,7 +119,10 @@ class _GridViewWidgetState extends State<GridViewWidget> {
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
+          decoration: BoxDecoration(
+            color: Colors.teal[100],
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -138,7 +151,10 @@ class _GridViewWidgetState extends State<GridViewWidget> {
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
+          decoration: BoxDecoration(
+            color: Colors.teal[100],
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -167,7 +183,10 @@ class _GridViewWidgetState extends State<GridViewWidget> {
         ),
         Container(
           padding: const EdgeInsets.all(8),
-          color: Colors.teal[100],
+          decoration: BoxDecoration(
+            color: Colors.teal[100],
+            borderRadius: BorderRadius.circular(10),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [

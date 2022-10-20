@@ -37,13 +37,7 @@ class _HomePageState extends State<HomePage> {
             navigationBar: CupertinoNavigationBar(
               middle: Text('Koperasi Undiksha'),
             ),
-            child: CustomScrollView(
-              slivers: <Widget>[
-                CupertinoSliverNavigationBar(
-                  largeTitle: Text('Koperasi Undiksha'),
-                ),
-              ],
-            ))
+            child: CustomScrollView())
         //Android Area
         : Scaffold(
             appBar: AppBar(
