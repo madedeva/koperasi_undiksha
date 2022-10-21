@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:praktikum_satu/components/dashboard_grid.dart';
 
 import 'grid_view_widget.dart';
 import 'login.dart';
@@ -167,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                           color: const Color.fromARGB(255, 10, 7, 139),
                         ),
                       ),
-                      child: const GridViewWidget(),
+                      child: GridDashboard(),
                     ),
                     const SizedBox(
                       height: 10.0,

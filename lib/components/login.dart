@@ -33,8 +33,8 @@ class _LoginPageState extends State<LoginPage> {
                           padding: const EdgeInsets.only(top: 50.0),
                           child: Image.asset(
                             'images/campus.png',
-                            width: 200,
-                            height: 200,
+                            width: 150,
+                            height: 150,
                           ),
                         ),
                         const SizedBox(
@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         Container(
                           width: 400.0,
-                          height: 300.0,
+                          height: 500.0,
                           decoration: const BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(10)),
                             color: Color(0xFFffffff),
@@ -53,8 +53,8 @@ class _LoginPageState extends State<LoginPage> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Container(
-                                  padding: const EdgeInsets.only(
-                                      left: 20.0, right: 20.0, top: 20.0),
+                                  // padding: const EdgeInsets.only(
+                                  //     left: 20.0, right: 20.0, top: 20.0),
                                   child: const CupertinoTextField(
                                     placeholder: 'Username',
                                     padding: EdgeInsets.all(20.0),
@@ -64,8 +64,8 @@ class _LoginPageState extends State<LoginPage> {
                                   height: 20.0,
                                 ),
                                 Container(
-                                  padding: const EdgeInsets.only(
-                                      left: 20.0, right: 20.0),
+                                  // padding: const EdgeInsets.only(
+                                  //     left: 20.0, right: 20.0),
                                   child: const CupertinoTextField(
                                     placeholder: 'Password',
                                     padding: EdgeInsets.all(20.0),
@@ -75,8 +75,8 @@ class _LoginPageState extends State<LoginPage> {
                                   height: 20.0,
                                 ),
                                 Container(
-                                  padding: const EdgeInsets.only(
-                                      left: 20.0, right: 20.0),
+                                  // padding: const EdgeInsets.only(
+                                  //     left: 20.0, right: 20.0),
                                   child: CupertinoButton(
                                     color:
                                         const Color.fromARGB(255, 33, 54, 243),
@@ -97,28 +97,28 @@ class _LoginPageState extends State<LoginPage> {
                                 const SizedBox(
                                   height: 20.0,
                                 ),
-                                Container(
-                                  padding: const EdgeInsets.only(
-                                      top: 20.0, left: 20.0, right: 20.0),
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: const [
-                                      Text(
-                                        'Buat Mbanking',
-                                        style: TextStyle(
-                                            color: Color.fromARGB(
-                                                255, 33, 54, 243)),
-                                      ),
-                                      Text(
-                                        'Lupa Password?',
-                                        style: TextStyle(
-                                            color: Color.fromARGB(
-                                                255, 33, 54, 243)),
-                                      ),
-                                    ],
-                                  ),
-                                )
+                                // Container(
+                                //   padding: const EdgeInsets.only(
+                                //       top: 20.0, left: 20.0, right: 20.0),
+                                //   child: Row(
+                                //     mainAxisAlignment:
+                                //         MainAxisAlignment.spaceBetween,
+                                //     children: const [
+                                //       Text(
+                                //         'Buat Mbanking',
+                                //         style: TextStyle(
+                                //             color: Color.fromARGB(
+                                //                 255, 33, 54, 243)),
+                                //       ),
+                                //       Text(
+                                //         'Lupa Password?',
+                                //         style: TextStyle(
+                                //             color: Color.fromARGB(
+                                //                 255, 33, 54, 243)),
+                                //       ),
+                                //     ],
+                                //   ),
+                                // )
                               ],
                             ),
                           ),

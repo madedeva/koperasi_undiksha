@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum_satu/components/dashboard_grid.dart';
 import 'package:praktikum_satu/components/login.dart';
 import 'package:praktikum_satu/components/login_test_adaptive.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const LoginPage(),
+      home: LoginPage(),
     );
   }
 }
