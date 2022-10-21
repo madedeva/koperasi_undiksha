@@ -2,23 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:praktikum_satu/components/dashboard_grid.dart';
 
-import 'grid_view_widget.dart';
 import 'login.dart';
-
-// class GridLayout {
-//   final String title;
-//   final IconData icon;
-
-//   GridLayout({required this.title, required this.icon});
-// }
-
-// List<GridLayout> options = [
-//   GridLayout(title: 'Wallet', icon: Icons.account_balance_wallet),
-//   GridLayout(title: 'Wallet', icon: Icons.account_balance_wallet),
-//   GridLayout(title: 'Wallet', icon: Icons.account_balance_wallet),
-//   GridLayout(title: 'Wallet', icon: Icons.account_balance_wallet),
-//   GridLayout(title: 'Wallet', icon: Icons.account_balance_wallet),
-// ];
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -28,7 +12,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // GridLayout layout;
   @override
   Widget build(BuildContext context) {
     bool isIOS = Theme.of(context).platform == TargetPlatform.iOS;
