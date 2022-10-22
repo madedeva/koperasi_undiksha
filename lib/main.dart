@@ -1,7 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/components/dashboard_grid.dart';
 import 'package:praktikum_satu/components/login.dart';
-import 'package:praktikum_satu/components/login_test_adaptive.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -14,32 +13,53 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      builder: (context, widget) => ResponsiveWrapper.builder(
-        BouncingScrollWrapper.builder(context, widget!),
-        maxWidth: 1200,
-        minWidth: 450,
-        defaultScale: true,
-        breakpoints: const [
-          ResponsiveBreakpoint.resize(350, name: MOBILE),
-          ResponsiveBreakpoint.autoScale(600, name: TABLET),
-          ResponsiveBreakpoint.resize(2460, name: DESKTOP),
-        ],
-      ),
-      title: 'Koperasi Undiksha',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        textTheme: GoogleFonts.poppinsTextTheme(
-          Theme.of(context).textTheme,
-        ),
-        primaryTextTheme: GoogleFonts.poppinsTextTheme().copyWith(
-          headline6: const TextStyle(
-            color: Colors.white,
-          ),
-        ),
-      ),
-      home: LoginPage(),
-    );
+    bool isIOS = Theme.of(context).platform == TargetPlatform.iOS;
+    return isIOS
+        ? CupertinoApp(
+            builder: (context, widget) => ResponsiveWrapper.builder(
+              BouncingScrollWrapper.builder(context, widget!),
+              maxWidth: 1200,
+              minWidth: 450,
+              defaultScale: true,
+              breakpoints: const [
+                ResponsiveBreakpoint.resize(350, name: MOBILE),
+                ResponsiveBreakpoint.autoScale(600, name: TABLET),
+                ResponsiveBreakpoint.resize(2460, name: DESKTOP),
+              ],
+            ),
+            title: 'Koperasi Undiksha',
+            debugShowCheckedModeBanner: false,
+            theme: CupertinoThemeData(
+              primaryContrastingColor: Colors.white,
+            ),
+            home: LoginPage(),
+          )
+        : MaterialApp(
+            builder: (context, widget) => ResponsiveWrapper.builder(
+              BouncingScrollWrapper.builder(context, widget!),
+              maxWidth: 1200,
+              minWidth: 450,
+              defaultScale: true,
+              breakpoints: const [
+                ResponsiveBreakpoint.resize(350, name: MOBILE),
+                ResponsiveBreakpoint.autoScale(600, name: TABLET),
+                ResponsiveBreakpoint.resize(2460, name: DESKTOP),
+              ],
+            ),
+            title: 'Koperasi Undiksha',
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+              textTheme: GoogleFonts.poppinsTextTheme(
+                Theme.of(context).textTheme,
+              ),
+              primaryTextTheme: GoogleFonts.poppinsTextTheme().copyWith(
+                headline6: const TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            home: LoginPage(),
+          );
   }
 }

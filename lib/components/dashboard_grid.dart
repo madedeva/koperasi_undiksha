@@ -38,8 +38,12 @@ class GridDashboard extends StatelessWidget {
       crossAxisCount: 3,
       children: List.generate(option.length, (index) {
         return Card(
+          color: Colors.grey[200],
+          elevation: 0,
           child: InkWell(
-            onTap: () {},
+            onTap: () {
+              print(option[index].name + ' is clicked');
+            },
             child: Center(
               child: Column(
                 mainAxisSize: MainAxisSize.min,

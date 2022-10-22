@@ -17,11 +17,57 @@ class _HomePageState extends State<HomePage> {
     bool isIOS = Theme.of(context).platform == TargetPlatform.iOS;
     return isIOS
         //iOS Area
-        ? const CupertinoPageScaffold(
+        ? CupertinoPageScaffold(
             navigationBar: CupertinoNavigationBar(
               middle: Text('Koperasi Undiksha'),
             ),
-            child: CustomScrollView())
+            child: SingleChildScrollView(
+              child: SafeArea(
+                child: Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        padding: EdgeInsets.only(top: 20, right: 20, left: 20),
+                        height: 200,
+                        child: Column(
+                          children: [Text('data')],
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Text(
+                        'Selamat Datang di Koperasi Undiksha',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      const Text(
+                        'Koperasi Undiksha adalah koperasi yang bergerak di bidang keuangan yang berada di lingkungan Universitas Dian Nuswantoro',
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      GridDashboard(),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          )
         //Android Area
         : Scaffold(
             appBar: AppBar(
@@ -96,8 +142,10 @@ class _HomePageState extends State<HomePage> {
                                     children: const [
                                       Text('Nasabah',
                                           style: TextStyle(
-                                              fontWeight: FontWeight.bold)),
-                                      Text('Deva Kerti Wijaya'),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 12.0)),
+                                      Text('Deva Kerti Wijaya',
+                                          style: TextStyle(fontSize: 12)),
                                     ],
                                   ),
                                 ),
@@ -124,9 +172,11 @@ class _HomePageState extends State<HomePage> {
                                           children: const [
                                             Text('Total Saldo Anda',
                                                 style: TextStyle(
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                            Text('Rp. 1.000.000'),
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 12.0)),
+                                            Text('Rp. 1.000.000',
+                                                style:
+                                                    TextStyle(fontSize: 12.0)),
                                           ],
                                         ),
                                       ),
@@ -177,11 +227,15 @@ class _HomePageState extends State<HomePage> {
                                 ),
                               ],
                             ),
-                            const Icon(
-                              Icons.call,
-                              color: Color.fromARGB(255, 33, 54, 243),
-                              size: 50,
-                            )
+                            IconButton(
+                                onPressed: (() {
+                                  print("calling..");
+                                }),
+                                icon: Icon(
+                                  Icons.call,
+                                  color: Color.fromARGB(255, 33, 54, 243),
+                                  size: 50,
+                                ))
                           ]),
                     )
                   ],
@@ -190,7 +244,7 @@ class _HomePageState extends State<HomePage> {
             ),
             //bottom navigation bar
             bottomNavigationBar: BottomNavigationBar(
-              backgroundColor: const Color.fromARGB(255, 212, 216, 255),
+              backgroundColor: const Color.fromARGB(255, 33, 54, 243),
               items: const <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
                   icon: Icon(Icons.settings),
@@ -199,7 +253,6 @@ class _HomePageState extends State<HomePage> {
                 BottomNavigationBarItem(
                   icon: Icon(
                     Icons.qr_code,
-                    size: 50,
                   ),
                   label: 'QRIS',
                 ),
@@ -208,8 +261,8 @@ class _HomePageState extends State<HomePage> {
                   label: 'Profile',
                 ),
               ],
-              selectedItemColor: Color.fromARGB(255, 33, 54, 243),
-              unselectedItemColor: Color.fromARGB(255, 33, 54, 243),
+              selectedItemColor: Color.fromARGB(255, 255, 255, 255),
+              unselectedItemColor: Color.fromARGB(255, 255, 255, 255),
               showUnselectedLabels: true,
             ),
           );
