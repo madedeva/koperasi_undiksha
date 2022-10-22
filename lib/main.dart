@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:praktikum_satu/components/app.dart';
 import 'package:praktikum_satu/components/login.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             theme: CupertinoThemeData(
               primaryContrastingColor: Colors.white,
             ),
-            home: LoginPage(),
+            home: BottomBar(),
           )
         : MaterialApp(
             builder: (context, widget) => ResponsiveWrapper.builder(

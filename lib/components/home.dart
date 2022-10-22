@@ -41,26 +41,6 @@ class _HomePageState extends State<HomePage> {
                       const SizedBox(
                         height: 20,
                       ),
-                      const Text(
-                        'Selamat Datang di Koperasi Undiksha',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      const Text(
-                        'Koperasi Undiksha adalah koperasi yang bergerak di bidang keuangan yang berada di lingkungan Universitas Dian Nuswantoro',
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
                       GridDashboard(),
                     ],
                   ),
@@ -68,6 +48,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           )
+
         //Android Area
         : Scaffold(
             appBar: AppBar(
