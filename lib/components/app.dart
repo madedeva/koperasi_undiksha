@@ -12,7 +12,7 @@ class App extends StatelessWidget {
 }
 
 class BottomBar extends StatelessWidget {
-  const BottomBar({Key? key}) : super(key: key);
+  BottomBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
