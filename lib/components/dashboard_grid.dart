@@ -32,7 +32,7 @@ class GridDashboard extends StatelessWidget {
     return GridView.count(
       shrinkWrap: true,
       primary: false,
-      padding: const EdgeInsets.all(10),
+      padding: EdgeInsets.all(10),
       crossAxisSpacing: 20,
       mainAxisSpacing: 20,
       crossAxisCount: 3,
@@ -51,11 +51,11 @@ class GridDashboard extends StatelessWidget {
                   Icon(
                     option[index].icon,
                     size: 50.0,
-                    color: Color.fromARGB(255, 65, 33, 243),
+                    color: Colors.blue,
                   ),
                   Text(
                     option[index].name,
-                    style: const TextStyle(fontSize: 12.0),
+                    style: TextStyle(fontSize: 12.0),
                   )
                 ],
               ),

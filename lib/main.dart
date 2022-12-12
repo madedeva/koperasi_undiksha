@@ -1,8 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/components/app.dart';
-import 'package:praktikum_satu/components/login.dart';
-import 'package:praktikum_satu/components/nav_bottom.dart';
+import 'package:praktikum_satu/components/beranda_scanner.dart';
+import 'package:praktikum_satu/components/home_page.dart';
+import 'package:praktikum_satu/components/register.dart';
+import 'package:praktikum_satu/service/service.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,39 +15,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // bool isIOS = Theme.of(context).platform == TargetPlatform.iOS;
-    // return isIOS
-    //     ? CupertinoApp(
-    //         builder: (context, widget) => ResponsiveWrapper.builder(
-    //           BouncingScrollWrapper.builder(context, widget!),
-    //           maxWidth: 1200,
-    //           minWidth: 450,
-    //           defaultScale: true,
-    //           breakpoints: const [
-    //             ResponsiveBreakpoint.resize(450, name: MOBILE),
-    //             ResponsiveBreakpoint.autoScale(600, name: TABLET),
-    //           ],
-    //         ),
-    //         title: 'Koperasi Undiksha',
-    //         debugShowCheckedModeBanner: false,
-    //         theme: CupertinoThemeData(
-    //           primaryContrastingColor: Colors.white,
-    //         ),
-    //         home: BottomBar(),
-    //       )
     return MaterialApp(
-      builder: (context, widget) => ResponsiveWrapper.builder(
-        BouncingScrollWrapper.builder(context, widget!),
-        maxWidth: 1200,
-        minWidth: 450,
-        defaultScale: true,
-        breakpoints: const [
-          ResponsiveBreakpoint.resize(450, name: MOBILE),
-          ResponsiveBreakpoint.autoScale(600, name: TABLET),
-        ],
-      ),
-      title: 'Koperasi Undiksha',
+      builder: (context, child) => ResponsiveWrapper.builder(
+          ClampingScrollWrapper.builder(context, child!),
+          maxWidth: 800,
+          minWidth: 450,
+          defaultScale: true,
+          breakpoints: const [
+            ResponsiveBreakpoint.resize(450, name: MOBILE),
+            ResponsiveBreakpoint.autoScale(800, name: TABLET),
+          ],
+          background: Container(color: const Color(0xFFF5F5F5))),
       debugShowCheckedModeBanner: false,
+      title: 'Koperasi Undiksha',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: GoogleFonts.poppinsTextTheme(
@@ -59,7 +39,17 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: LoginPage(),
+      routes: {
+        '/': (context) => const HomePage(title: 'Koperasi Undiksha'),
+        '/register': (context) => RegisterPage(),
+        '/beranda': (context) => const BerandaPage(title: 'Koperasi Undiksha'),
+      },
+      initialRoute: '/',
     );
+  }
+
+  getUsers() {
+    Service _service = Service();
+    _service.getDataUsers();
   }
 }
