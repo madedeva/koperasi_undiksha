@@ -37,7 +37,7 @@ class Contact extends StatelessWidget {
             }),
             icon: const Icon(
               Icons.call,
-              color: Color.fromARGB(255, 33, 243, 117),
+              color: Colors.blue,
               size: 50,
             ))
       ]),

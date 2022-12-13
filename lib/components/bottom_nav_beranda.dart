@@ -12,6 +12,8 @@ class BottomBarWidgetBeranda extends StatefulWidget {
 class _BottomBarWidgetBerandaState extends State<BottomBarWidgetBeranda> {
   @override
   Widget build(BuildContext context) {
+    // target platform
+    bool isiOS = Theme.of(context).platform == TargetPlatform.iOS;
     return BottomAppBar(
       color: Colors.grey.shade200,
       shape: const CircularNotchedRectangle(),
@@ -22,7 +24,9 @@ class _BottomBarWidgetBerandaState extends State<BottomBarWidgetBeranda> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/settings');
+                },
                 icon: const FaIcon(
                   FontAwesomeIcons.gear,
                   size: 34,

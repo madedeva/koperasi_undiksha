@@ -28,7 +28,13 @@ class _BerandaPageState extends State<BerandaPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Koperasi Undiksha'),
+        title: const Text('Beranda'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.logout, color: Colors.white),
+          ),
+        ],
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {

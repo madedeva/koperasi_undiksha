@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:praktikum_satu/components/beranda_scanner.dart';
 import 'package:praktikum_satu/components/home_page.dart';
 import 'package:praktikum_satu/components/register.dart';
+import 'package:praktikum_satu/components/setting.dart';
 import 'package:praktikum_satu/service/service.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomePage(title: 'Koperasi Undiksha'),
         '/register': (context) => RegisterPage(),
         '/beranda': (context) => const BerandaPage(title: 'Koperasi Undiksha'),
+        '/settings': (context) => const SettingsPage(),
       },
       initialRoute: '/',
     );

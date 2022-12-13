@@ -116,4 +116,46 @@ class Service {
       throw Exception(error.response);
     }
   }
+
+  // setoran
+  Future<ListUsersModel?> setoranUsers(
+      {required String password,
+      required String name,
+      required String email,
+      required double saldo}) async {
+    Dio dio = Dio();
+    String url = "https://koperasiundiksha.000webhostapp.com/setoran";
+    final Response response;
+
+    try {
+      response = await dio.post(
+        url,
+        data: {
+          "username": email,
+          "password": password,
+          "nama": name,
+          "saldo": saldo,
+        },
+      );
+
+      if (response.statusCode == 200) {
+        var json = response.data;
+        var data = json;
+
+        print(data['status']);
+        if (data['status'] != 'error') {
+          return null;
+        } else {
+          Future<ListUsersModel?> result =
+              loginUsers(password: password, email: email);
+          print(result);
+          return result;
+        }
+      }
+      return null;
+    } on DioError catch (error, stacktrace) {
+      print('Exception occured: $error stackTrace: $stacktrace');
+      throw Exception(error.response);
+    }
+  }
 }

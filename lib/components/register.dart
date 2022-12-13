@@ -32,7 +32,8 @@ class _RegisterPageState extends State<RegisterPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset('assets/images/logo.png', width: 200),
+            const SizedBox(height: 20),
+            Image.asset('images/campus.png', width: 200),
             const SizedBox(height: 20),
             Container(
               margin: EdgeInsets.symmetric(

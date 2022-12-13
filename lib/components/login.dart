@@ -106,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: const Text('lupa password?'),
+                      child: const Text('Lupa Password?'),
                     ),
                   ],
                 ),
