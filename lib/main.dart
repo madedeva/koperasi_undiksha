@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/components/beranda_scanner.dart';
-import 'package:praktikum_satu/components/home_page.dart';
-import 'package:praktikum_satu/components/register.dart';
-import 'package:praktikum_satu/components/setting.dart';
+import 'package:praktikum_satu/views/beranda_scanner.dart';
+import 'package:praktikum_satu/views/home_page.dart';
+import 'package:praktikum_satu/views/register.dart';
+import 'package:praktikum_satu/views/setting.dart';
+import 'package:praktikum_satu/views/profile.dart';
 import 'package:praktikum_satu/service/service.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
         '/register': (context) => RegisterPage(),
         '/beranda': (context) => const BerandaPage(title: 'Koperasi Undiksha'),
         '/settings': (context) => const SettingsPage(),
+        '/profile': (context) => const ProfilePage(),
       },
       initialRoute: '/',
     );

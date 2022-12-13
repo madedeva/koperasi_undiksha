@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/components/list_user_page.dart';
+import 'package:praktikum_satu/views/list_user_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomBarWidgetBeranda extends StatefulWidget {
@@ -34,8 +34,7 @@ class _BottomBarWidgetBerandaState extends State<BottomBarWidgetBeranda> {
                 )),
             IconButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ListUserPage()));
+                  Navigator.pushNamed(context, '/profile');
                 },
                 icon: const FaIcon(
                   FontAwesomeIcons.userLarge,

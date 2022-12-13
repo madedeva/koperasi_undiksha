@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/components/bottom_bar.dart';
-import 'package:praktikum_satu/components/login.dart';
+import 'package:praktikum_satu/views/bottom_bar.dart';
+import 'package:praktikum_satu/views/login.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key, required this.title}) : super(key: key);

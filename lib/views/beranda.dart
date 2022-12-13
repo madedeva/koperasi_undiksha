@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/components/contact.dart';
-import 'package:praktikum_satu/components/dashboard_grid.dart';
-import 'package:praktikum_satu/model/list_users_model.dart';
+import 'package:praktikum_satu/views/contact.dart';
+import 'package:praktikum_satu/views/dashboard_grid.dart';
+import 'package:praktikum_satu/model/users_model.dart';
 
 class BerandaWidget extends StatefulWidget {
   const BerandaWidget({Key? key}) : super(key: key);

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/components/bottom_bar.dart';
+import 'package:praktikum_satu/views/bottom_bar.dart';
 import 'package:praktikum_satu/service/service.dart';
 
-import '../model/list_users_model.dart';
+import '../model/users_model.dart';
 
 class RegisterPage extends StatefulWidget {
   RegisterPage({Key? key}) : super(key: key);

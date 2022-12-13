@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/model/list_users_model.dart';
+import 'package:praktikum_satu/model/users_model.dart';
 import 'package:praktikum_satu/service/service.dart';
 
 class LoginPage extends StatefulWidget {

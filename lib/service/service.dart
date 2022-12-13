@@ -1,5 +1,5 @@
 import "package:dio/dio.dart";
-import 'package:praktikum_satu/model/list_users_model.dart';
+import 'package:praktikum_satu/model/users_model.dart';
 
 class Service {
   // list users

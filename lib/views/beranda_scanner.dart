@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:praktikum_satu/components/beranda.dart';
-import 'package:praktikum_satu/components/bottom_nav_beranda.dart';
-import 'package:praktikum_satu/components/contact.dart';
-import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:praktikum_satu/views/beranda.dart';
+import 'package:praktikum_satu/views/bottom_nav_beranda.dart';
+import 'package:praktikum_satu/views/contact.dart';
+import 'package:praktikum_satu/views/scan_qr.dart';
 
 class BerandaPage extends StatefulWidget {
   const BerandaPage({Key? key, required this.title}) : super(key: key);
@@ -16,7 +15,7 @@ class BerandaPage extends StatefulWidget {
 }
 
 class _BerandaPageState extends State<BerandaPage> {
-  String _scanBarcode = 'Unknown';
+  // String _scanBarcode = 'Unknown';
 
   @override
   void initState() {
@@ -63,7 +62,12 @@ class _BerandaPageState extends State<BerandaPage> {
       bottomNavigationBar: const BottomBarWidgetBeranda(),
       floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
       floatingActionButton: FloatingActionButton(
-          onPressed: () => scanQR(),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Qrscanner()),
+            );
+          },
           tooltip: 'Transfer',
           child: const FaIcon(
             FontAwesomeIcons.qrcode,
@@ -73,19 +77,19 @@ class _BerandaPageState extends State<BerandaPage> {
     );
   }
 
-  Future<void> scanQR() async {
-    String barcodeScanRes;
-    try {
-      barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
-          '#ff6666', 'Cancel', true, ScanMode.QR);
-    } on PlatformException {
-      barcodeScanRes = 'Failed to get platform version.';
-    }
+  // Future<void> scanQR() async {
+  //   String barcodeScanRes;
+  //   try {
+  //     barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+  //         '#ff6666', 'Cancel', true, ScanMode.QR);
+  //   } on PlatformException {
+  //     barcodeScanRes = 'Failed to get platform version.';
+  //   }
 
-    if (!mounted) return;
+  //   if (!mounted) return;
 
-    setState(() {
-      _scanBarcode = barcodeScanRes;
-    });
-  }
+  //   setState(() {
+  //     _scanBarcode = barcodeScanRes;
+  //   });
+  // }
 }
