@@ -1,28 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:praktikum_satu/views/scan_qr.dart';
 
 class GridLayout {
   String name;
   IconData icon;
-  GridLayout({required this.name, required this.icon});
+  var screen;
+  GridLayout({required this.name, required this.icon, required this.screen});
 }
 
 class GridDashboard extends StatelessWidget {
   final List<GridLayout> option = [
     GridLayout(
-      name: 'Cek Saldo',
-      icon: Icons.account_balance_wallet,
-    ),
+        name: 'Cek Saldo',
+        icon: Icons.account_balance_wallet,
+        screen: 'Cek Saldo'),
+    GridLayout(name: 'Transfer', icon: Icons.money, screen: Qrscanner()),
+    GridLayout(name: 'Deposito', icon: Icons.attach_money, screen: 'Deposito'),
     GridLayout(
-      name: 'Transfer',
-      icon: Icons.money,
-    ),
+        name: 'Pembayaran', icon: Icons.credit_card, screen: 'Pembayaran'),
     GridLayout(
-      name: 'Deposito',
-      icon: Icons.attach_money,
-    ),
-    GridLayout(name: 'Pembayaran', icon: Icons.credit_card),
-    GridLayout(name: 'Peminjaman', icon: Icons.monitor_weight),
-    GridLayout(name: 'Cek Mutasi', icon: Icons.account_balance),
+        name: 'Peminjaman', icon: Icons.monitor_weight, screen: 'Peminjaman'),
+    GridLayout(
+        name: 'Cek Mutasi', icon: Icons.account_balance, screen: 'Mutasi'),
   ];
 
   GridDashboard({Key? key}) : super(key: key);
@@ -42,7 +41,10 @@ class GridDashboard extends StatelessWidget {
           elevation: 0,
           child: InkWell(
             onTap: () {
-              print(option[index].name + ' is clicked');
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => option[index].screen),
+              );
             },
             child: Center(
               child: Column(

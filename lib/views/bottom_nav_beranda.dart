@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/views/list_user_page.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomBarWidgetBeranda extends StatefulWidget {

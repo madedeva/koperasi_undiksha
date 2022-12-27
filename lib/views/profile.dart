@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:praktikum_satu/model/users_model.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -24,7 +23,7 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
       body: Container(
         child: Center(
-          child: Text('User', style: TextStyle(fontSize: 30)),
+          child: Text('Deva', style: TextStyle(fontSize: 30)),
         ),
       ),
     );

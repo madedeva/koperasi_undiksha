@@ -32,10 +32,10 @@ class MyApp extends StatelessWidget {
       title: 'Koperasi Undiksha',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        textTheme: GoogleFonts.poppinsTextTheme(
+        textTheme: GoogleFonts.montserratTextTheme(
           Theme.of(context).textTheme,
         ),
-        primaryTextTheme: GoogleFonts.poppinsTextTheme().copyWith(
+        primaryTextTheme: GoogleFonts.montserratTextTheme().copyWith(
           headline6: const TextStyle(
             color: Colors.white,
           ),

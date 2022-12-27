@@ -24,21 +24,35 @@ class _QrscannerState extends State<Qrscanner> {
             const SizedBox(
               height: 30,
             ),
-            Text('Rekening tujuan: $link'),
+            Text(
+              'Rekening tujuan:',
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+            Text('$link'),
             const SizedBox(
               height: 20,
             ),
-            ElevatedButton(
-              onPressed: () async {
-                String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
-                    "#ff6666", "Tutup", false, ScanMode.DEFAULT);
-                setState(() {
-                  link = barcodeScanRes;
-                });
-              },
-              child: const Text(
-                'Scan',
-                style: TextStyle(fontSize: 50),
+            SizedBox(
+              width: 200,
+              height: 60,
+              child: ElevatedButton(
+                onPressed: () async {
+                  String barcodeScanRes =
+                      await FlutterBarcodeScanner.scanBarcode(
+                          "#ff6666", "Tutup", false, ScanMode.DEFAULT);
+                  setState(() {
+                    link = barcodeScanRes;
+                  });
+                },
+                child: const Text(
+                  'Scan QR',
+                  style: TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
             const SizedBox(
