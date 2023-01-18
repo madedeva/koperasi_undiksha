@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704620445506",
+    "project_id": "koperasiundiksha",
+    "storage_bucket": "koperasiundiksha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704620445506:android:959c09005897067f3592db",
+        "android_client_info": {
+          "package_name": "com.example.praktikum_satu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704620445506-4meossbt1nhlv1egjjeoj3l1s9odpdas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj5dcAw3-im2r_Ora6HvB_X2okhIqWLpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704620445506-4meossbt1nhlv1egjjeoj3l1s9odpdas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
