@@ -1,7 +1,8 @@
 # Koperasi Undiksha
-# I Made Deva Kerti Wijaya
+# I Made Deva Kerti Wijaya 2015051012
 
 Tampilan Aplikasi Koperasi Undiksha versi 1.0.0
+Link Video Presentasi: https://youtu.be/JoDefssMeFg
 
 Login Page
 ![Simulator Screen Shot - iPhone SE (3rd generation) - 2022-12-12 at 23 26 03](https://user-images.githubusercontent.com/87641573/207085246-e3d9ecc4-9d57-4884-9c07-d4e200f7506c.png)
