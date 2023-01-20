@@ -18,7 +18,6 @@ class Beranda extends StatefulWidget {
 }
 
 class _BerandaState extends State<Beranda> {
-  // Fungsi untuk menghitung hasil nilai dari persentase sebuah total nilai
   double hitungPersentase(double total, double persentase) {
     return total * persentase / 100;
   }
@@ -62,13 +61,13 @@ class _BerandaState extends State<Beranda> {
             padding:
                 const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
             decoration: BoxDecoration(
-              color: Colors.grey[200],
+              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Container(
+                SizedBox(
                     width:
                         hitungPersentase(MediaQuery.of(context).size.width, 25),
                     child: ClipRRect(
@@ -86,7 +85,7 @@ class _BerandaState extends State<Beranda> {
                       width: hitungPersentase(
                           MediaQuery.of(context).size.width, 60),
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -118,7 +117,7 @@ class _BerandaState extends State<Beranda> {
                       width: hitungPersentase(
                           MediaQuery.of(context).size.width, 60),
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -156,7 +155,7 @@ class _BerandaState extends State<Beranda> {
                   hitungPersentase(MediaQuery.of(context).size.width, 3),
             ),
             decoration: BoxDecoration(
-              color: Colors.grey[200],
+              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
             child: GridDashboard(id: user!.userId),

@@ -15,7 +15,7 @@ class Contact extends StatelessWidget {
       margin: EdgeInsets.symmetric(
         horizontal: hitungPersentase(MediaQuery.of(context).size.width, 3),
       ),
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         color: Colors.grey[200],
         borderRadius: BorderRadius.circular(10.0),

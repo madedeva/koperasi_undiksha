@@ -52,7 +52,7 @@ class _MainState extends State<Main> {
 
   @override
   Widget build(BuildContext context) {
-    // cek jika terdapat data login
+    // cek apakah user login atau tidak
     userReferences.getUserId().then((value) {
       setState(() {
         userId = value;

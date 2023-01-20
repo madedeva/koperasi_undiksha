@@ -12,7 +12,6 @@ class _BottomBarState extends State<BottomBar> {
   Widget build(BuildContext context) {
     return BottomAppBar(
       color: Colors.blue,
-      shape: const CircularNotchedRectangle(),
       child: Container(
         alignment: Alignment.center,
         height: 50.0,

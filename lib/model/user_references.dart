@@ -65,7 +65,7 @@ class UserReferences {
     return _prefs!.getString('nomorRekening');
   }
 
-  // setting null all data
+  // setup null all data
   void setNullAllData() async {
     _prefs = await _pref;
     _prefs!.setString('userId', '');
@@ -76,7 +76,7 @@ class UserReferences {
     _prefs!.setString('nomorRekening', '');
   }
 
-  // QR scan result
+  // hasil scan
   void setQrScanResult(String qrScanResult) async {
     _prefs = await _pref;
     _prefs!.setString('qrScanResult', qrScanResult);

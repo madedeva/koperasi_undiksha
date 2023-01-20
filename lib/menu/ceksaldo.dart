@@ -86,8 +86,8 @@ class _CekSaldoState extends State<CekSaldo> {
                             margin: const EdgeInsets.only(bottom: 10),
                             child: Text(
                               'Nomor Rekening : ${myUser!.nomorRekening}',
-                              style:
-                                  TextStyle(fontSize: 14, color: Colors.black),
+                              style: const TextStyle(
+                                  fontSize: 14, color: Colors.black),
                             ),
                           ),
                           Container(

@@ -69,7 +69,6 @@ class UserServices extends ChangeNotifier {
             dynamic user =
                 data.map<UserModel>((u) => UserModel.fromJson(u)).toList();
 
-            // print(data);
             notifyListeners();
             return user;
           }
@@ -111,15 +110,13 @@ class UserServices extends ChangeNotifier {
             dynamic user =
                 data.map<UserModel>((u) => UserModel.fromJson(u)).toList();
 
-            // simpan data user ke shared preferences
+            // save data user dengan shared preferences
             userReferences.setUserId(user[0].userId);
             userReferences.setUserName(user[0].username);
             userReferences.setNama(user[0].nama);
             userReferences.setSaldo(user[0].saldo);
             userReferences.setPassword(user[0].password);
             userReferences.setNomorRekening(user[0].nomorRekening);
-
-            // print(data);
 
             notifyListeners();
             return user;
